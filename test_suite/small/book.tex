@@ -26,52 +26,21 @@
 \usepackage{setspace}
 \usepackage{hevea}                           
 \usepackage{upquote}
+\usepackage{db45}
 
 \title{Think Stats}
 \author{Allen B. Downey}
-
 \newcommand{\thetitle}{Think Stats: Probability and Statistics for Programmers}
 \newcommand{\theversion}{1.4.6}
-
 \makeindex
-
-\newif\ifplastex
-\plastexfalse
-
 \begin{document}
-
 \frontmatter
-
-
-\ifplastex
-    \usepackage{localdef}
-    \maketitle
-
-\newcount\anchorcnt
-\newcommand*{\Anchor}[1]{%
-  \@bsphack%
-    \Hy@GlobalStepCount\anchorcnt%
-    \edef\@currentHref{anchor.\the\anchorcnt}% 
-    \Hy@raisedlink{\hyper@anchorstart{\@currentHref}\hyper@anchorend}% 
-    \label{#1}% 
-    \@esphack%
-}
-
-
-\else
-
-\fi
-
-\chapter{Preface}
+\maketitle
+\chapter*{Preface}
 \label{preface}
 
-
 \begin{exercise}
-\ifplastex
-    \Anchor{relay}
-\else
-    \label{relay}
-\fi
+
 In most foot races, everyone starts at the same time.  If you are a
 fast runner, you usually pass a lot of people at the beginning of the
 race, but after a few miles everyone around you is going at the same

@@ -2,9 +2,8 @@
 # export PYTHONPATH=$PYTHONPATH:.
 
 plastex:
-	rm -rf book/.svn
-	plastex --renderer=DocBook --theme=book --image-resolution=300 --filename=book.xml book.tex
-	rm -rf book/.svn
+	plastex --renderer=DocBook --theme=book \
+	        --image-resolution=300 --filename=book.xml book.tex
 
 xxe:
 	# install xxe from http://www.xmlmind.com/xmleditor/download.shtml

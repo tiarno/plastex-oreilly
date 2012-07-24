@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+
 from distutils.core import setup
 
 templates = ['*.html','*.htm','*.xml','*.zpt','*.zpts']

@@ -1,2 +1,2 @@
 install:
-	sudo python setup.py install
+	/Users/tim/venvs/mynewenv/bin/python setup.py install
