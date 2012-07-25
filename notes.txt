@@ -1,0 +1,4 @@
+workon mynewenv
+export PYTHONPATH="/Users/tim/github/local/plastex-oreilly/oreilly"
+export DocBookTEMPLATES="/Users/tim/github/local/plastex-oreilly/oreilly"
+export TEXINPUTS="/Users/tim/github/local/plastex-oreilly/oreilly:.::"

@@ -1,0 +1,22 @@
+name:verbatim
+<programlisting tal:content="self"></programlisting>
+
+name: ref
+type:xml
+<xref tal:attributes="linkend self/idref/label/id" />
+
+
+name: it
+<emphasis tal:content="self"></emphasis>
+
+name: mathit
+<emphasis tal:content="self"></emphasis>
+
+name: mathphrase
+<inlineequation><mathphrase tal:content="self"></mathphrase></inlineequation>
+
+name: bf
+<emphasis role="bold" tal:content="self"></emphasis>
+
+name: tt
+<literal tal:content="self"></literal>
