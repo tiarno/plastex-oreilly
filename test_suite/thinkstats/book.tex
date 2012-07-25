@@ -13,7 +13,6 @@
 
 % for some of these packages, you might have to install
 % texlive-latex-extra (in Ubuntu)
-
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{mathpazo}
@@ -31,6 +30,8 @@
 \usepackage{setspace}
 \usepackage{hevea}                           
 \usepackage{upquote}
+\usepackage{db45}
+\usepackage{allen}
 
 \title{Think Stats}
 \author{Allen B. Downey}
@@ -58,130 +59,70 @@
 
 \frontmatter
 
-\ifplastex
-    \newcommand{\dd}{\mathit{d}}
-    \newcommand{\e}{\mathit{e}}
-    \newcommand{\f}{\mathit{f}}
-    \newcommand{\gee}{\mathit{g}}
-    \newcommand{\ii}{\mathit{i}}
-    \newcommand{\kk}{\mathit{k}}
-    \newcommand{\n}{\mathit{n}}
-    \newcommand{\m}{\mathit{m}}
-    \newcommand{\w}{\mathit{w}}
-    \newcommand{\p}{\mathit{p}}
-    \newcommand{\s}{\mathit{s}}
-    \newcommand{\x}{\mathit{x}}
-    \newcommand{\X}{\mathit{X}}
-    \newcommand{\y}{\mathit{y}}
-    \newcommand{\Y}{\mathit{Y}}
-    \newcommand{\z}{\mathit{z}}
-    \newcommand{\Z}{\mathit{Z}}
-    \newcommand{\E}{\mathit{E}}
-    \newcommand{\OO}{\mathit{O}}
-    \newcommand{\HH}{\mathit{H}}
-    \newcommand{\A}{\mathit{A}}
-    \newcommand{\B}{\mathit{B}}
-    \newcommand{\D}{\mathit{D}}
-    \newcommand{\N}{\mathit{N}}
-    \newcommand{\R}{\mathit{R}}
-    \newcommand{\Ssq}{$S^2$}
-    \newcommand{\Snsq}{$S_{n-1}^2$}
-    \newcommand{\mya}{\mathit{a}}
-    \newcommand{\myb}{\mathit{b}}
-    \newcommand{\Prob}{\mathit{P}}
-    \newcommand{\xsubi}{\mathit{x}\sub{i}}
-    \newcommand{\psubi}{\mathit{p}\sub{i}}
-    \newcommand{\mymu}{\mathit{\mu}}
-    \newcommand{\mychi}{\mathit{\chi}}
-    \newcommand{\myalpha}{\mathit{\alpha}}
-    \newcommand{\mysigma}{\mathit{\sigma}}
-    \newcommand{\myrho}{\mathit{\rho}}
-    \newcommand{\mylambda}{\mathit{\lambda}}
-    \newcommand{\mydelta}{\mathit{\delta}}
-    \newcommand{\sigmasq}{\mathit{\sigma}\super{2}}
+\newcommand{\dd}{$d$}
+\newcommand{\e}{$e$}
+\newcommand{\f}{$f$}
+\newcommand{\gee}{$g$}
+\newcommand{\ii}{$i$}
+\newcommand{\kk}{$k$}
+\newcommand{\n}{$n$}
+\newcommand{\m}{$m$}
+\newcommand{\w}{$w$}
+\newcommand{\p}{$p$}
+\newcommand{\s}{$s$}
+\newcommand{\x}{$x$}
+\newcommand{\X}{$X$}
+\newcommand{\y}{$y$}
+\newcommand{\Y}{$Y$}
+\newcommand{\z}{$z$}
+\newcommand{\Z}{$Z$}
+\newcommand{\E}{$E$}
+\newcommand{\OO}{$O$}
+\newcommand{\HH}{$H$}
+\newcommand{\A}{$A$}
+\newcommand{\B}{$B$}
+\newcommand{\D}{$D$}
+\newcommand{\N}{$N$}
+\newcommand{\R}{$R$}
+\newcommand{\Ssq}{$S^2$}
+\newcommand{\Snsq}{$S_{n-1}^2$}
+\newcommand{\mya}{$a$}
+\newcommand{\myb}{$b$}
+\newcommand{\Prob}{$P$}
+\newcommand{\xsubi}{$x_i$}
+\newcommand{\psubi}{$p_i$}
+\newcommand{\mymu}{$\mu$}
+\newcommand{\mychi}{$\chi$}
+\newcommand{\myalpha}{$\alpha$}
+\newcommand{\mysigma}{$\sigma$}
+\newcommand{\myrho}{$\rho$}
+\newcommand{\mylambda}{$\lambda$}
+\newcommand{\mydelta}{$\delta$}
+\newcommand{\sigmasq}{$\sigma^2$}
 
-    \newcommand{\plus}{+}
-    \newcommand{\mytimes}{\times}
-    \newcommand{\mydivide}{/}
-    \newcommand{\mystar}{\lowast}
-    \newcommand{\mysim}{\sim}
-    \newcommand{\myapprox}{\approx}
-    \newcommand{\mynormal}{$\mathcal{N}$}
+\newcommand{\plus}{$+$}
+\newcommand{\minus}{$-$}
+\newcommand{\mytimes}{$\times$}
+\newcommand{\mydivide}{$/$}
 
-    \newcommand{\myslope}{\mathit{\beta}}
-    \newcommand{\myinter}{\mathit{\alpha}}
+\newcommand{\sub}[1]{$_{#1}$}
+\newcommand{\super}[1]{$^{#1}$}
+\newcommand{\mystar}{$\star$}
+\newcommand{\mysim}{$\sim$}
+\newcommand{\myapprox}{$\approx$}
+\newcommand{\normal}{\mathcal{N}}
+\newcommand{\mynormal}{$\mathcal{N}$}
 
-    \newcommand{\myeps}{\mathit{\varepsilon}}
-    \newcommand{\myxbar}{\uxbar}
-    \newcommand{\myybar}{\uybar}
-    \newcommand{\mynhat}{$\nhat$}
-    \newcommand{\myle}{\ule}
-\else
-    \newcommand{\dd}{$d$}
-    \newcommand{\e}{$e$}
-    \newcommand{\f}{$f$}
-    \newcommand{\gee}{$g$}
-    \newcommand{\ii}{$i$}
-    \newcommand{\kk}{$k$}
-    \newcommand{\n}{$n$}
-    \newcommand{\m}{$m$}
-    \newcommand{\w}{$w$}
-    \newcommand{\p}{$p$}
-    \newcommand{\s}{$s$}
-    \newcommand{\x}{$x$}
-    \newcommand{\X}{$X$}
-    \newcommand{\y}{$y$}
-    \newcommand{\Y}{$Y$}
-    \newcommand{\z}{$z$}
-    \newcommand{\Z}{$Z$}
-    \newcommand{\E}{$E$}
-    \newcommand{\OO}{$O$}
-    \newcommand{\HH}{$H$}
-    \newcommand{\A}{$A$}
-    \newcommand{\B}{$B$}
-    \newcommand{\D}{$D$}
-    \newcommand{\N}{$N$}
-    \newcommand{\R}{$R$}
-    \newcommand{\Ssq}{$S^2$}
-    \newcommand{\Snsq}{$S_{n-1}^2$}
-    \newcommand{\mya}{$a$}
-    \newcommand{\myb}{$b$}
-    \newcommand{\Prob}{$P$}
-    \newcommand{\xsubi}{$x_i$}
-    \newcommand{\psubi}{$p_i$}
-    \newcommand{\mymu}{$\mu$}
-    \newcommand{\mychi}{$\chi$}
-    \newcommand{\myalpha}{$\alpha$}
-    \newcommand{\mysigma}{$\sigma$}
-    \newcommand{\myrho}{$\rho$}
-    \newcommand{\mylambda}{$\lambda$}
-    \newcommand{\mydelta}{$\delta$}
-    \newcommand{\sigmasq}{$\sigma^2$}
+\newcommand{\myslope}{$\beta$}
+\newcommand{\myinter}{$\alpha$}
 
-    \newcommand{\plus}{$+$}
-    \newcommand{\minus}{$-$}
-    \newcommand{\mytimes}{$\times$}
-    \newcommand{\mydivide}{$/$}
+\newcommand{\myeps}{$\varepsilon$}
 
-    \newcommand{\sub}[1]{$_{#1}$}
-    \newcommand{\super}[1]{$^{#1}$}
-    \newcommand{\mystar}{$\star$}
-    \newcommand{\mysim}{$\sim$}
-    \newcommand{\myapprox}{$\approx$}
-    \newcommand{\normal}{\mathcal{N}}
-    \newcommand{\mynormal}{$\mathcal{N}$}
-
-    \newcommand{\myslope}{$\beta$}
-    \newcommand{\myinter}{$\alpha$}
-
-    \newcommand{\myeps}{$\varepsilon$}
-
-    \newcommand{\myxbar}{$\xbar$}
-    \newcommand{\myybar}{$\ybar$}
-    \newcommand{\mynhat}{$\nhat$}
-    \newcommand{\myle}{$\le$}
-    \newcommand{\Eqn}[1]{\quad #1}
-\fi
+\newcommand{\myxbar}{$\xbar$}
+\newcommand{\myybar}{$\ybar$}
+\newcommand{\mynhat}{$\nhat$}
+\newcommand{\myle}{$\le$}
+\newcommand{\Eqn}[1]{\quad #1}
 
 \newcommand{\Erdos}{Erd\H{o}s}
 \newcommand{\nhat}{\hat{N}}
@@ -195,25 +136,9 @@
 \newcommand{\CDF}{\mathrm{CDF}}
 \newcommand{\ICDF}{\mathrm{ICDF}}
 
-\ifplastex
-    \usepackage{localdef}
-    \maketitle
-
-\newcount\anchorcnt
-\newcommand*{\Anchor}[1]{%
-  \@bsphack%
-    \Hy@GlobalStepCount\anchorcnt%
-    \edef\@currentHref{anchor.\the\anchorcnt}% 
-    \Hy@raisedlink{\hyper@anchorstart{\@currentHref}\hyper@anchorend}% 
-    \M@gettitle{}\label{#1}% 
-    \@esphack%
-}
-
-
-\else
-
+\maketitle
 %%% EXERCISE
-
+\ifplastex\else
 \newtheoremstyle{exercise}% name of the style to be used
   {\topsep}% measure of space to leave above the theorem. E.g.: 3pt
   {\topsep}% measure of space to leave below the theorem. E.g.: 3pt
@@ -226,29 +151,14 @@
 
 \theoremstyle{exercise}
 \newtheorem{exercise}{Exercise}[chapter]
-
+\fi
 %\newcounter{exercise}[chapter]
 %\newcommand{\nextexercise}{\refstepcounter{exercise}}
-
 %\newenvironment{exercise}{\nextexercise \noindent \textbf{Exercise \thechapter.\theexercise} \begin{itshape} \noindent}{\end{itshape}}
 
-\input{latexonly}
-
-\begin{latexonly}
-
-\renewcommand{\blankpage}{\thispagestyle{empty} \quad \newpage}
-
-%\blankpage
-%\blankpage
-
-% TITLE PAGES FOR LATEX VERSION
-
-%-half title--------------------------------------------------
 \thispagestyle{empty}
-
 \begin{flushright}
 \vspace*{2.0in}
-
 \begin{spacing}{3}
 {\huge Think Stats: Probability and Statistics for Programmers}\\
 {\Large }
